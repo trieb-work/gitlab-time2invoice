@@ -1,0 +1,32 @@
+{
+    "common": {
+        "groupid": "", // the ID of your gitlab company. We filter "your" issues by using all user IDs we get from this group.
+        "gitlab_auth_token": "",
+        "sevdesk_auth_token": "",
+        "sevdesk_invoice_template_id": "", // the sevdesk render template. Leave empty if you want to use your default one
+        "sevdesk_internal_contact_person": "", // SevDesk has an internal ID for you as a contact person
+        "sevdesk_header_text": "Hier die Stundenabrechnung des letzten Monats. Jeder Rechnungsposten entspricht einem geschlossenen GitLab Issue."
+    },
+    "companies": {
+        "testCorp": {
+            "gitlabid": "6967386",
+            "web_url": "https://gitlab.com/groups/testCorp",
+            "name": "testCorp",
+            "path": "testCorp",
+            "sevdesk_adress_name": "testCorp GmbH",
+            "sevdesk_adress": "testCorp GmbH\nHerrn Max Muster\nRudolf-Diesel-Str. 100\n90459 Nürnberg",
+            "sevdesk_price_per_hour": "55",
+            "sevdesk_id": "", // the ID this customer has in SevDesk
+            "projects": { // you can have multiple projects per customer
+                "Wordpress Frontend": {
+                    "name": "Wordpress Frontend",
+                    "id": "",
+                    "web_url": "https://gitlab.com/testCorp/wordpress-frontend",
+                    "path": "wordpress-frontend",
+                    "path_with_namespace": "testCorp/wordpress-frontend",
+                    "created_at": "2020-02-03T11:08:57.567Z"
+                }
+            }
+        }
+    }
+}
