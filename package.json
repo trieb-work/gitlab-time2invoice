@@ -12,7 +12,7 @@
   "author": "Tilman Marquart | trieb.work",
   "license": "MIT",
   "dependencies": {
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "prompt": "^1.0.0",
     "qs": "^6.5.2",
     "yargs": "^15.1.0"
